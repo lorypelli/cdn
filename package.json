@@ -3,6 +3,7 @@
     "private": true,
     "scripts": {
         "dev": "wrangler dev",
+        "format": "prettier --write .",
         "prod": "wrangler deploy"
     },
     "dependencies": {
@@ -11,6 +12,7 @@
     "devDependencies": {
         "@cloudflare/workers-types": "^4.20250204.0",
         "prettier": "^3.4.2",
+        "prettier-plugin-organize-imports": "^4.1.0",
         "wrangler": "^3.107.3"
     }
 }

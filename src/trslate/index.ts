@@ -13,7 +13,7 @@ trslate.get('/:version?', async (ctx) => {
         }
         const v = res.url.split('/').at(-1);
         if (v) {
-            return ctx.redirect(`/trslate/${v.slice(1)}`, 302);
+            return ctx.redirect(`/trslate/${v.slice(1)}`);
         }
         return ctx.json({ error: 'Missing package version!' }, 400);
     }

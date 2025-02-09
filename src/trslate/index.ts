@@ -23,7 +23,11 @@ trslate.get('/:version?', async (ctx) => {
     if (!res.ok) {
         return ctx.json({ error: res.statusText }, 500);
     }
-    return ctx.text(await res.text());
+    return ctx.body(await res.text(), {
+        headers: {
+            'Content-Type': 'text/javascript',
+        },
+    });
 });
 
 export default trslate;

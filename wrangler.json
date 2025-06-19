@@ -7,9 +7,5 @@
     "route": {
         "pattern": "cdn.lorypelli.dev",
         "custom_domain": true
-    },
-    "assets": {
-        "binding": "ASSETS",
-        "directory": "./dist"
     }
 }

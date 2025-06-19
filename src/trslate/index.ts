@@ -25,7 +25,7 @@ trslate.get('/:version?', async (ctx) => {
     }
     return ctx.body(await res.text(), {
         headers: {
-            'Content-Type': 'text/javascript',
+            'Content-Type': 'application/javascript',
         },
     });
 });

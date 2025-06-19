@@ -1,0 +1,15 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "cdn",
+    "compatibility_date": "2025-06-15",
+    "compatibility_flags": ["nodejs_compat"],
+    "main": "src/index.ts",
+    "route": {
+        "pattern": "cdn.lorypelli.dev",
+        "custom_domain": true
+    },
+    "assets": {
+        "binding": "ASSETS",
+        "directory": "./dist"
+    }
+}
